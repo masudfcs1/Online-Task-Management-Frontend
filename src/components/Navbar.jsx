@@ -2,6 +2,8 @@ import React from "react";
 import { MdOutlineSearch } from "react-icons/md";
 import { useDispatch, useSelector } from "react-redux";
 import { setOpenSidebar } from "../redux/slices/authSlice";
+import NotificationPanel from "./NotificationPanel";
+import UserAvatar from "./UserAvatar";
 // import UserAvatar from "./UserAvatar";
 // import NotificationPanel from "./NotificationPanel";
 
@@ -31,9 +33,9 @@ const Navbar = () => {
       </div>
 
       <div className='flex gap-2 items-center'>
-        {/* <NotificationPanel /> */}
+        <NotificationPanel />
 
-        {/* <UserAvatar /> */}
+        <UserAvatar />
       </div>
     </div>
   );
