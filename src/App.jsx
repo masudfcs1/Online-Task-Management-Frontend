@@ -11,6 +11,9 @@ import Tasks from "./pages/Tasks"
 import Trash from "./pages/Trash"
 import Users from "./pages/Users"
 import { Transition } from "@headlessui/react"
+import clsx from "clsx"
+import { IoClose } from "react-icons/io5"
+import { setOpenSidebar } from "./redux/slices/authSlice"
 
 function Layout() {
   const { user } = useSelector((state) => state.auth);
