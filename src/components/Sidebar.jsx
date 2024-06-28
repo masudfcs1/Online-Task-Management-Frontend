@@ -1,4 +1,6 @@
+import clsx from "clsx";
 import React from "react";
+import { FaTasks, FaTrashAlt, FaUsers } from "react-icons/fa";
 import {
   MdDashboard,
   MdOutlineAddTask,
@@ -6,11 +8,9 @@ import {
   MdSettings,
   MdTaskAlt,
 } from "react-icons/md";
-import { FaTasks, FaTrashAlt, FaUsers } from "react-icons/fa";
 import { useDispatch, useSelector } from "react-redux";
 import { Link, useLocation } from "react-router-dom";
 import { setOpenSidebar } from "../redux/slices/authSlice";
-import clsx from "clsx";
 
 const linkData = [
   {
